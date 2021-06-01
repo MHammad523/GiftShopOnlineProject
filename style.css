@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.product{
+	width:200px;
+	height:250px;
+	margin:5px;
+	display:inline-block;
+	background-color:#939393;
+}
+.product2{
+	width:200px;
+	height:200px;
+	background-color:#80F5FF;
+	margin:5px;
+	display:inline-block
+}
+img.prod{
+	width:170px;
+	height:170px;
+	margin-top:10px;
+}
+.prodbutton{
+	width:170px;
+	margin-top:10px;
+}
+.navitem{
+	font-size:24px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color:#FFFFFF;
+	margin-top:9px;
+}
+.navitem:hover{
+	border-radius: 10px;
+}
+.nav{
+	background-color:#7c7c7c;
+	border-radius:20px;
+}
+.cate{
+	height:300px;
+}
+.cateoverlay{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:#D7D7D7;
+	overflow:hidden;
+	opacity:0.2;
+	width:100%;
+	height:100%;
+	transform:scale(0);
+	transition:0.3s ease;
+}
+.cate:hover .cateoverlay{
+	transform:scale(1);
+	opacity:0.7;
+}
+.catetext{
+	color:#006654;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size:30px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+.gen{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-decoration: none;
+}
+
+.brabtn{
+	text-decoration: none;
+	color: #000000;
+}
+.brabtn:hover{
+	color: #006654;
+	
+}
+option{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: white;
+	background-color: #3a3a3a;
+}

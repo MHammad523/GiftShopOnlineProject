@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Home</title>
+<link rel="shortcut icon" type="image/png" href="Assets/favicon.png"/>
+
+
+<!-- Viewport configuration -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!-- Style.css -->
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+<!--Font Awesome ICONS-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<style>
+#sitemap:hover{
+	 background-color:#061324;
+ }
+	 #sitemap a{
+		 text-decoration:none;
+		 color:white;
+		 font-size:16px;
+	 }
+	 #sitemap{
+		 padding:10px;
+	 }
+	
+	 #footer h1{
+		 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		color:#FFF; 
+		text-align:center;
+	 }
+	 #footer p{
+		 text-align:center;
+		 font-size:16px;
+		 color:#FFF;
+	 }
+li.dropdown:hover .dropdown-menu{
+	display:block;
+}
+.fixedback{
+	background-image:url(Assets/PresentFixed.jpg);
+	height:400px;
+	margin-top:70px;
+	width:100%;
+	background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	min-height:380px;	
+}
+
+.fixedback h6 {
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 2em;
+    margin-bottom: 0.5em;
+}
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="nav">
+<ul class="nav navbar-nav">
+	<script>
+		var imglogo = document.getElementById("imglogo");
+		function ilh(imglogo){
+			imglogo.src = "Assets/Gift shop.png"
+			imglogo.style.backgroundColor = "black"
+		}
+		function ilo(imglogo){
+			imglogo.src = "Assets/Gift shop 2.png"
+			imglogo.style.backgroundColor = "white"
+		}
+	</script>
+<li><img id="imglogo" onmouseover="ilh(this)" onmouseout="ilo(this)" src="Assets/Gift shop 2.png" style="margin-top:5px; margin-bottom: 5px; margin-left:80px; margin-right: 130px; background-color: white; border-radius: 10px; width: 250px" height="75px" alt="LOGO.PNG"/></li>
+<li class="navbar-btn navitem"><a class="navitem" href="Index.html">Home</a></li>
+
+<li class="dropdown navbar-btn navitem">
+<a href="#" class="dropdown-toggle navitem" data-toggle="dropdown"> Categories <span class="caret"></span> </a>
+<ul class="dropdown-menu">
+<li><a href="Men Products.html">For Men</a></li>
+<li><a href="Women Products.html">For Women</a></li>
+<li><a href="Kids Products.html">For Children</a></li>
+<li><a href="Card Products.html">Cards</a></li>
+<li><a href="Watch Products.html">Watches</a></li>
+<li><a href="Jewellery Products.html">Jewellery</a></li>
+</ul>
+</li>
+
+<li class="navbar-btn navitem"><a class="navitem" href="About Us.html">About Us</a></li>
+
+<li class="navbar-btn navitem"><a class="navitem" href="Contact Us.html">Contact Us</a></li>
+<li class="gen" style="color:white"><i class="fa fa-shopping-cart" style="font-size:20px; text-align: right; color: white; margin-top: 20px; margin-left: 300px"></i>&nbsp;&nbsp;&nbsp;Cart</li>
+<li class="gen" style="color:white"><i class="fa fa-user-alt" style="font-size:20px; text-align: right; color: white; margin-top: 10px; margin-left: 300px"></i>&nbsp;&nbsp;&nbsp;Log In</li>
+</ul>
+</nav>
+
+
+<!--BODY-->
+<section class="col-lg-12" style="background-color:#FFFFFF; left:0; right:0">
+<!-- CAROUSEL -->
+<div id="CARO" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#CARO" data-slide-to="0" class="active"></li>
+<li data-target="#CARO" data-slide-to="1" class="active"></li>
+</ol>
+  <div class="carousel-inner" style="width:100%">
+    <div class="item active">
+		<img src="Assets/Sliders/Slider 1.png" alt="slider1" class="container" >
+    </div>
+    <div class="item">
+    	<img src="Assets/Sliders/Slider 2.png" alt="slider2" class="container" >
+    </div>
+    
+  </div>
+</div>
+<div class="fixedback"><h6 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; left: 0px; right: 0px;"> We have a little something for everyone<br><br>
+<a href="Men Products.html" style="text-decoration:none;color:white">Come shop with us</a> </h6>
+</div>
+<div style="padding:10px; background-color:#D7D7D7; height:680px">
+<p style="text-align:center; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif; font-size:45px;">Categories</p>
+<a href="Men Products.html">
+<div class="cate col-lg-4">
+	<img src="Assets/MEN CAT.jpg" class="cateimg img-responsive">
+    <div class="cateoverlay">
+    	<div class="catetext">For Men</div>
+    </div>
+</div>
+</a>
+<a href="Women Products.html">
+<div class="cate col-lg-4">
+	<img src="Assets/WOMAN CAT.jpg" class="cateimg img-responsive">
+    <div class="cateoverlay">
+    	<div class="catetext">For Women</div>
+    </div>
+</div>
+</a>
+<a href="Kids Products.html">
+<div class="cate col-lg-4">
+	<img src="Assets/CHILDREN CAT.jpg" class="cateimg img-responsive">
+    <div class="cateoverlay">
+    	<div class="catetext">For Children</div>
+    </div>
+</div>
+</a>
+<a href="Card Products.html">
+<div class="cate col-lg-4">
+	<img src="Assets/CARD CAT.jpg" class="cateimg img-responsive">
+    <div class="cateoverlay">
+    	<div class="catetext">Cards</div>
+    </div>
+</div>
+</a>
+<a href="Watch Products.html">
+<div class="cate col-lg-4">
+	<img src="Assets/WATCH CAT.jpg" class="cateimg img-responsive">
+    <div class="cateoverlay">
+    	<div class="catetext">Watches</div>
+    </div>
+</div>
+</a>
+<a href="Jewellery Products.html">
+<div class="cate col-lg-4">
+	<img src="Assets/JEWELLERY CAT.jpg" class="cateimg img-responsive">
+    <div class="cateoverlay">
+    	<div class="catetext">Jewellery</div>
+    </div>
+</div>
+<br>
+</a>
+
+</div>
+</section>
+<div class="container-fluid" id="footer">
+<div class="col-md-12" style="background-color:#7c7c7c;">
+<div class="col-md-2" >
+<h1 style="border-right: white solid">Site Map</h1>
+<ul style="color:#FFF; list-style-type:none;border-right: white solid"> 
+<li id="sitemap"><a href="Index.html">Home</a></li>
+<li id="sitemap"><a href="About Us.html">About Us</a></li>
+<li id="sitemap"><a href="Contact Us.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-md-6" style="border-right:white solid">
+<h1 style="text-align:right"> About Us </h1>
+<p style="text-align:right"> This is the eProject of the students of Aptech Computer Education &copy;<br />
+ Designed and Developed by Students  </p>
+</div>
+<div class="col-md-4">
+<h1> Like Us On: </h1>
+<i class="fab fa-facebook" style="font-size:35px; color:#fff; margin-left:130px; margin-right:20px;"></i>
+<i class="fab fa-twitter" style="font-size:35px; color:#fff;margin-right:20px;"></i>
+<i class="fab fa-instagram" style="font-size:35px; color:#fff;margin-right:20px;"></i>
+</div>
+</div>
+<p style="background-color:#061324;" class="gen"> Coprights &copy; || All Rights Reserved</p>
+</div>
+</body>
+</html>

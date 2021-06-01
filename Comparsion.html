@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Compare Brands</title>
+<link rel="shortcut icon" type="image/png" href="Assets/favicon.png"/>
+
+<!-- Viewport configuration -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!-- Style.css -->
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--Font Awesome ICONS-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="nav">
+        <ul class="nav navbar-nav">
+            <script>
+                var imglogo = document.getElementById("imglogo");
+                function ilh(imglogo){
+                    imglogo.src = "Assets/Gift shop.png"
+                    imglogo.style.backgroundColor = "black"
+                }
+                function ilo(imglogo){
+                    imglogo.src = "Assets/Gift shop 2.png"
+                    imglogo.style.backgroundColor = "white"
+                }
+            </script>
+        <li><img id="imglogo" onmouseover="ilh(this)" onmouseout="ilo(this)" src="Assets/Gift shop 2.png" style="margin-top:5px; margin-bottom: 5px; margin-left:80px; margin-right: 130px; background-color: white; border-radius: 10px; width: 250px" height="75px" alt="LOGO.PNG"/></li>
+        <li class="navbar-btn navitem"><a class="navitem" href="Index.html">Home</a></li>
+        
+        <li class="dropdown navbar-btn navitem">
+        <a href="#" class="dropdown-toggle navitem" data-toggle="dropdown"> Categories <span class="caret"></span> </a>
+        <ul class="dropdown-menu">
+        <li><a href="Men Products.html">For Men</a></li>
+        <li><a href="Women Products.html">For Women</a></li>
+        <li><a href="Kids Products.html">For Children</a></li>
+        <li><a href="Card Products.html">Cards</a></li>
+        <li><a href="Watch Products.html">Watches</a></li>
+        <li><a href="Jewellery Products.html">Jewellery</a></li>
+        </ul>
+        </li>
+        
+        <li class="navbar-btn navitem"><a class="navitem" href="About Us.html">About Us</a></li>
+        
+        <li class="navbar-btn navitem"><a class="navitem" href="Contact Us.html">Contact Us</a></li>
+        <li class="gen" style="color:white"><i class="fa fa-shopping-cart" style="font-size:20px; text-align: right; color: white; margin-top: 20px; margin-left: 300px"></i>&nbsp;&nbsp;&nbsp;Cart</li>
+        <li class="gen" style="color:white"><i class="fa fa-user-alt" style="font-size:20px; text-align: right; color: white; margin-top: 10px; margin-left: 300px"></i>&nbsp;&nbsp;&nbsp;Log In</li>
+        </ul>
+        </nav>
+
+<!--BODY-->
+<section class="col-lg-12" style="background-color:#FFFFFF; left:0; right:0">
+
+        <div class="container" style="text-align:center;">
+  
+                <div  class="col-sm-5" style=" display:block"> 
+            
+            <form>
+            <input style="width: 350px; height: 30px; left: 50px;" type="text" list="com1" id="coma">
+            <datalist id="com1">
+                <option value="Adidas">
+                <option value="Giorgio Armani">
+                <option value="Gucci">
+                <option value="Hallmark">
+                <option value="Nike">
+                <option value="Puma">
+                <option value="RayBan">
+                <option value="Reebok">
+            </datalist>
+            
+            <div id="answera" class="col-lg-4" style="left:50px;background-color:#000000b3; width: 350px; height: 490px; color:white" ></div>
+            </div>
+            </form>
+            
+                <div  class="col-sm-2" style=" display:block" style="text-align:center;"> 
+            
+             <button onClick="both()" style="height:40px; width: 175px; border: radius 4; font-size:24px;font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif; background-color: #3a3a3a; color: white" class="button" class="btn btn-info">Compare</button><br>
+            
+            
+            </div>
+            
+            
+                <div  class="col-sm-5" style=" display:block" style="text-align:center;"> 
+            
+            <input style="right:40px; width: 350px; height: 30px;" type="text" list="com2" id="comb" >
+            <datalist id="com2">
+                    <option value="Adidas">
+                    <option value="Giorgio Armani">
+                    <option value="Gucci">
+                    <option value="Hallmark">
+                    <option value="Nike">
+                    <option value="Puma">
+                    <option value="RayBan">
+                    <option value="Reebok">
+            
+            
+            </datalist>
+            
+            <div id="answerb" class="col-lg-4" style="left: 40px;background-color:#000000b3;width: 350px; height: 490px;color:white" ></div>
+            </div>
+            </div>
+            
+            <script>
+            
+            function compa(){
+                
+                var opa=document.getElementById("coma").value;
+                
+                if(opa=="Adidas"){
+                    document.getElementById("answera").innerHTML="<img src='Assets/Adidas.png' height=auto width=300><br><h1 class='gen'>Adidas</h1><h4 style='padding:5px' class='gen'>A massive sport oriented brand which provides world class customer service.</h4><a href='adidas.html' class='btn'>Visit</a>";
+                    }
+                    else if(opa=="Giorgio Armani"){
+                    document.getElementById("answera").innerHTML="<img src='Assets/Armani.png' height=auto width=300 style='padding:0;left:-5px'><br><h1 class='gen'>Giorgio Armani</h1><h4 style='padding:5px' class='gen'>An Italian luxary fashion brand which manufactures perfumes and other gift products.</h4><a href='armani.html' class='btn'>Visit</a>";
+                    }
+                    else if(opa=="Gucci"){
+                    document.getElementById("answera").innerHTML="<img src='Assets/Gucci.jpg' height=auto width=300><br><h1 class='gen'>Gucci</h1><h4 style='padding:5px' class='gen'>Gucci is an Italian luxury brand of fashion and leather goods</h4><a href='gucci.html' class='btn'>Visit</a>";
+                    }
+                    else if(opa=="Hallmark"){
+                    document.getElementById("answera").innerHTML="<img src='Assets/Hallmark.jpg' height=auto width=300><br><h1 class='gen'>Hallmark</h1><h4 style='padding:5px' class='gen'>One of the most trusted companies for gift cards and gift products.</h4><a href='hallmark.html' class='btn'>Visit</a>";
+                    }
+                    else if(opa=="Nike"){
+                    document.getElementById("answera").innerHTML="<img src='Assets/Nike.jpg' height=auto width=300><br><h1 class='gen'>Nike</h1><h4 style='padding:5px' class='gen'>An American athletics designer known for its iconic 'check' logo.</h4><a href='nike.html' class='btn'>Visit</a>";
+                    }
+                    else if(opa=="Puma"){
+                    document.getElementById("answera").innerHTML="<img src='Assets/Puma.png' height=auto width=300><br><h1 class='gen'>Puma</h1><h4 style='padding:5px' class='gen'>Puma is a multinational company that designs and manufactures footwear.</h4><a href='puma.html' class='btn'>Visit</a>";
+                    }
+                    else if(opa=="RayBan"){
+                    document.getElementById("answera").innerHTML="<img src='Assets/RayBan.jpg' height=auto width=300><br><h1 class='gen'>RayBan</h1><h4 style='padding:5px' class='gen'>An Italian brand of sunglasses known for the Wayfarer and Aviator lines.</h4><a href='rayban.html' class='btn'>Visit</a>";
+                    }
+                    else if(opa=="Reebok"){
+                    document.getElementById("answera").innerHTML="<img src='Assets/Reebok.jpg' height=auto width=300><br><h1 class='gen'>Reebok</h1><h4 style='padding:5px' class='gen'>A sportware and fitness based company under Adidas</h4><a href='rbk.html' class='btn'>Visit</a>";
+                    }
+                    else{
+                    document.getElementById("answera").innerHTML="Invalid";
+                    }
+                
+                
+                }
+            
+             
+            
+            function compb(){
+                
+                var opb=document.getElementById("comb").value;
+                
+                if(opb=="Adidas"){
+                    document.getElementById("answerb").innerHTML="<img src='Assets/Adidas.png' height=auto width=300><br><h1 class='gen'>Adidas</h1><h4 style='padding:5px' class='gen'>A massive sport oriented brand which provides world class customer service.</h4><a href='adidas.html' class='btn'>Visit</a>";
+                    }
+                    else if(opb=="Giorgio Armani"){
+                    document.getElementById("answerb").innerHTML="<img src='Assets/Armani.png' height=auto width=300 style='padding:0;left:-5px'><br><h1 class='gen'>Giorgio Armani</h1><h4 style='padding:5px' class='gen'>An Italian luxary fashion brand which manufactures perfumes and other gift products.</h4><a href='armani.html' class='btn'>Visit</a>";
+                    }
+                    else if(opb=="Gucci"){
+                    document.getElementById("answerb").innerHTML="<img src='Assets/Gucci.jpg' height=auto width=300><br><h1 class='gen'>Gucci</h1><h4 style='padding:5px' class='gen'>Gucci is an Italian luxury brand of fashion and leather goods</h4><a href='gucci.html' class='btn'>Visit</a>";
+                    }
+                    else if(opb=="Hallmark"){
+                    document.getElementById("answerb").innerHTML="<img src='Assets/Hallmark.jpg' height=auto width=300><br><h1 class='gen'>Hallmark</h1><h4 style='padding:5px' class='gen'>One of the most trusted companies for gift cards and gift products.</h4><a href='hallmark.html' class='btn'>Visit</a>";
+                    }
+                    else if(opb=="Nike"){
+                    document.getElementById("answerb").innerHTML="<img src='Assets/Nike.jpg' height=auto width=300><br><h1 class='gen'>Nike</h1><h4 style='padding:5px' class='gen'>An American athletics designer known for its iconic 'check' logo.</h4><a href='nike.html' class='btn'>Visit</a>";
+                    }
+                    else if(opb=="Puma"){
+                    document.getElementById("answerb").innerHTML="<img src='Assets/Puma.png' height=auto width=300><br><h1 class='gen'>Puma</h1><h4 style='padding:5px' class='gen'>Puma is a multinational company that designs and manufactures footwear.</h4><a href='puma.html' class='btn'>Visit</a>";
+                    }
+                    else if(opb=="RayBan"){
+                    document.getElementById("answerb").innerHTML="<img src='Assets/RayBan.jpg' height=auto width=300><br><h1 class='gen'>RayBan</h1><h4 style='padding:5px' class='gen'>An Italian brand of sunglasses known for the Wayfarer and Aviator lines.</h4><a href='rayban.html' class='btn'>Visit</a>";
+                    }
+                    else if(opb=="Reebok"){
+                    document.getElementById("answerb").innerHTML="<img src='Assets/Reebok.jpg' height=auto width=300><br><h1 class='gen'>Reebok</h1><h4 style='padding:5px' class='gen'>A sportware and fitness based company under Adidas</h4><a href='rbk.html' class='btn'>Visit</a>";
+                    }
+                    else{
+                    document.getElementById("answerb").innerHTML="Invalid";
+                    }
+                
+                
+                }
+            
+            function both(){
+                compa();
+                compb();
+            }
+            
+            </script>
+
+
+    <div style="background-color:#000000; right:0px; left:0px; position:absolute">
+<br>
+<p style="color:#FFFFFF; text-align:center; font-size:18px"><a href="About Us.html">About Us</a></p>
+<p style="color:#FFFFFF; text-align:center; font-size:12px">We are a group of students who worked on this website</p>
+<p style="color:#FFFFFF; text-align:center; font-size:12px"><a href="mailto:eprojectgroup1337.com?Subject=Customer%20Complaint">Contact Us</a></p>
+<br>
+
+</div>
+</section>
+</body>
+</html>
